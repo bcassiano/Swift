@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4846B25272C079200294FBB /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4846B24272C079200294FBB /* Movie.swift */; };
+		F4846B28272C081A00294FBB /* MovieServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4846B27272C081A00294FBB /* MovieServices.swift */; };
+		F4846B2A272C08C000294FBB /* MovieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4846B29272C08C000294FBB /* MovieStore.swift */; };
+		F4846B2C272C097500294FBB /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4846B2B272C097500294FBB /* Utils.swift */; };
+		F4846B2E272C0B5D00294FBB /* Movie+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4846B2D272C0B5D00294FBB /* Movie+Stub.swift */; };
 		F4DA9B93272B986E0099CCB1 /* SM2YApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA9B83272B986C0099CCB1 /* SM2YApp.swift */; };
-		F4DA9B94272B986E0099CCB1 /* SM2YApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA9B83272B986C0099CCB1 /* SM2YApp.swift */; };
-		F4DA9B95272B986E0099CCB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA9B84272B986C0099CCB1 /* ContentView.swift */; };
-		F4DA9B96272B986E0099CCB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA9B84272B986C0099CCB1 /* ContentView.swift */; };
 		F4DA9B97272B986E0099CCB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4DA9B85272B986E0099CCB1 /* Assets.xcassets */; };
 		F4DA9B98272B986E0099CCB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4DA9B85272B986E0099CCB1 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F4846B24272C079200294FBB /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		F4846B27272C081A00294FBB /* MovieServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServices.swift; sourceTree = "<group>"; };
+		F4846B29272C08C000294FBB /* MovieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStore.swift; sourceTree = "<group>"; };
+		F4846B2B272C097500294FBB /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F4846B2D272C0B5D00294FBB /* Movie+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+Stub.swift"; sourceTree = "<group>"; };
 		F4DA9B83272B986C0099CCB1 /* SM2YApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SM2YApp.swift; sourceTree = "<group>"; };
-		F4DA9B84272B986C0099CCB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F4DA9B85272B986E0099CCB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4DA9B8A272B986E0099CCB1 /* SM2Y.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SM2Y.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DA9B90272B986E0099CCB1 /* SM2Y.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SM2Y.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +48,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F4846B23272C077200294FBB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4846B24272C079200294FBB /* Movie.swift */,
+				F4846B2D272C0B5D00294FBB /* Movie+Stub.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F4846B26272C080500294FBB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F4846B27272C081A00294FBB /* MovieServices.swift */,
+				F4846B29272C08C000294FBB /* MovieStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F4846B2F272C0BED00294FBB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		F4DA9B7D272B986C0099CCB1 = {
 			isa = PBXGroup;
 			children = (
@@ -55,7 +86,10 @@
 			isa = PBXGroup;
 			children = (
 				F4DA9B83272B986C0099CCB1 /* SM2YApp.swift */,
-				F4DA9B84272B986C0099CCB1 /* ContentView.swift */,
+				F4846B2B272C097500294FBB /* Utils.swift */,
+				F4846B2F272C0BED00294FBB /* Resources */,
+				F4846B26272C080500294FBB /* Services */,
+				F4846B23272C077200294FBB /* Models */,
 				F4DA9B85272B986E0099CCB1 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -176,8 +210,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4DA9B95272B986E0099CCB1 /* ContentView.swift in Sources */,
 				F4DA9B93272B986E0099CCB1 /* SM2YApp.swift in Sources */,
+				F4846B28272C081A00294FBB /* MovieServices.swift in Sources */,
+				F4846B2E272C0B5D00294FBB /* Movie+Stub.swift in Sources */,
+				F4846B25272C079200294FBB /* Movie.swift in Sources */,
+				F4846B2A272C08C000294FBB /* MovieStore.swift in Sources */,
+				F4846B2C272C097500294FBB /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +223,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4DA9B96272B986E0099CCB1 /* ContentView.swift in Sources */,
-				F4DA9B94272B986E0099CCB1 /* SM2YApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
